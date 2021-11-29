@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Deploy</title>
+</head>
+<body>
+    <div id = "login">
+        <div><label>Email : <input type="text" id="email" required></label></div>
+        <div><label>Password : <input type="text" id="password" required></label></div>
+        <div><label class="firstName">FirstName : <input type="text" id="Fname" required></label></div>
+        <div><label class="lastName">LastName : <input type="text" id="Lname" required></label></div>
+        <label><button id="loginButton"> LogIn </button>
+        <label><button id="registerButton"> Register </button>
+    </div>
+
+    <div id = "main" >
+        <div class="list_of_items">
+            <div class="div1" style = "display: inline;"></div>
+            <img src="images/veg list.jpeg"　align=left>
+        </div>
+
+        <div class="input_and_cart">
+            <div class="newName"></div>
+                <label>ItemName : </label>
+                <input type="text" id="newName" required>
+            <div class="newPrice"></div>
+                <label>Price : </label>
+                <input type="text" id="newPrice" required>
+            <div class="newKind"></div>
+                <label>Veggie or Fruit : </label>
+                <input type="text" id="newKind" required>
+            <div class="newQuantity"></div>
+                <label>Quantity : </label>
+                <input type="text" id="newQuantity" required>
+
+            <div><button id="addButton"> Add </button></div>
+            <div><button id="saveButton"> Save </button></div>
+
+
+                <TABLE  BORDER="5" width=80% cellpadding="4" cellspacig="3" align=center>
+                    <TR>
+                    <TH COLSPAN="2">
+                        <H3><BR>Shopping Cart</H3></TH></TR>
+                    <TR> 
+                    <TD><ol id=item_name align=center ></ol></TD></TR>
+                    </TABLE>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
